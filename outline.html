@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <title>DAA Project</title>
+<body>
+    <form id = "input-form">
+        <h3 style="font-size:large;">Input</h3>
+        
+        <label for="input-size"><h3 style="font-size:larger;"></h3> Input Size : </label>
+        <input type="number" id="input-size" name="input-size"><br><br></form>
+ 
+        <button type="button" id="genSample" onclick="myfunction()">Generate Numbers</button><br><br>
+        <div id='comparisons'>
+            
+
+        </div>
+
+        <!-- Sort inputs -->
+        <button type="button" id="mergesort" onclick="mergeSort()">Mergesort</button>
+        <button type="button" id="heapsort" onclick="heapSort()">Heapsort</button>
+        <button type="button" id="quicksort1" onclick="quickSort()">Quicksort</button>
+        <button type="button" id="quicksort2" onclick="quickSort2()">Three Median Quicksort</button>
+        <button type="button" id="selection-sort" onclick="selectionSort()">Selection sort</button>
+        <button type="button" id="insertion-sort" onclick="insertionSort()">Insertion sort</button>
+        <button type="button" id="bubble-sort" onclick="bubbleSort()">Bubble Sort</button>
+
+    </form>
+
+    <br><br>
+    
+    
+    <div style="text-align:center;border:1px solid black;">
+    <div><p id="input"></p></div>
+    </div>
+
+    <br><br>
+    <div style="position: relative;width:auto;height:auto;text-align:center;border:1px solid rgba(0, 0, 0,.5);">
+    <div>Execution Time: <p id="output"></p></div>
+    <div><p id="sorted-array"></p></div>
+
+    </div>
+
+
+    <script src="generate.js"></script>
+    <script src="sorts.js"></script>
+    
+</body>
+</html>
